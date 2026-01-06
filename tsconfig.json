@@ -1,0 +1,27 @@
+{
+  "extends": "@tsconfig/node24/tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
+    "moduleResolution": "bundler",
+    "module": "esnext",
+    "target": "esnext",
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "forceConsistentCasingInFileNames": true,
+    "removeComments": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true
+  }
+  , "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
